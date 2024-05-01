@@ -1,0 +1,57 @@
+1. Write a difference between the windows and document object
+
+                    
+DIFFERENCE BETWEEN WINDOW AND DOCUMENT OBJECT
+
+  ->The window and document object play an important role in shaping the user experience and enabling dynamic insteractions.
+  ->The window object represents a window/tab containing a Document Object Model document where as a document object is property used inside a window object which points to the DOM document loaded in that window.
+  ->Main difference between the window and document object is that the window object represents the brower window as a whole , while the document object represents the content  of the web page. 
+  ->This means that the window object is available even if the web page is not fully loaded,while the document object is only available after the web page is fully loaded
+  ->Here below we can see the some difference between both characteristics.
+
+
+Window Object
+-------------
+
+1--The window object represents the browser window that contains the DOM.
+2-- It is the top-level object in the browser's JavaScript hierarchy, and it provides properties and methods for interacting with the browser environment. 
+3--It is the object of the browser.
+4--Not used for content manipulation; interacts with the browser environment.
+5--Variables and functions declared in the global scope are attached to the window object.For example, a global variable x can be accessed as window.x.
+6--Not used for selecting DOM elements; provides methods for browser interaction.
+7--The window object provides methods to interact with the browser, such as window.open() to open a new browser window or tab, and window.close() to close the current window.
+8--The window object can be used to attach event listeners for various browser events, such as load, resize, and scroll.
+9--Not used for form handling; interacts with browser behavior related to forms.
+10--syntax:window.propertyname;
+
+For example :
+ Opening a new browser window:
+window.open('https://www.example.com');
+//This code will open a new browser window or tab and navigate to the URL specified (https://www.example.com).
+
+
+Document Object
+---------------
+
+1--Document object represents the HTML document that is displayed in the browser.
+2--It acts as an interface for manipulating  the content and structure of the webpage. 
+3--It provides a structured representation of the document's element, such as paragraphs,headings,image,forms etc.
+4--Using document object,javascript can modify,add and delete the HTML elements,attributes. css styles in the page.
+5--Child of the 'window' object in the DOM hirearchy.
+6--In Javascript, we cannot directly access windows objects properties inside or within the document object.
+7--The document object provides access to form elements and methods to submit forms, validate input, and handle form events.
+8--It provides methods like document.getElementById(), document.getElementsByClassName(), and document.querySelectorAll() to select and interact with DOM elements.
+9.Can attach event listeners to respond to user actions on the web page
+10--This object can be accessed with window.document or just document.
+--Syntax: document.propertyname;
+
+
+For example,
+Changing the text content or description of an HTML element:
+document.getElementById('myelement').innerHTML='New description';
+//This code says the document object to select an HTML element with the ID 'myelement' and then sets its innerHTML property to 'New description', effectively changing the content of that element.
+
+
+
+  
+
